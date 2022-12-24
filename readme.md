@@ -1,4 +1,4 @@
-# Loopstudios
+# Photosnap
 
 ![Imagen del proyecto](https://github.com/djimenezweb/photosnap/blob/main/design/preview.jpg?raw=true)
 
