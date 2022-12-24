@@ -1,0 +1,161 @@
+:root {
+    --light-grey: #dfdfdf;
+    --accent-orange: #ffc593;
+    --accent-pink: #bc7198;
+    --accent-blue: #5a77ff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: 1px dashed rgba(255, 0, 0, 0.2);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+nav,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 1440px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+/* h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+} */
+
+/* HEADER Y NAV */
+
+.header {
+    height: 72px;
+    padding: 0 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+}
+
+.nav__list li:nth-child(1),
+.nav__list li:nth-child(4) {
+    margin-left: auto;
+}
+
+.nav__link {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--light-grey);
+}
+
+/* BOTONES */
+
+.button--black {
+    background-color: black;
+    color: white;
+    padding: .75rem 1.5rem;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button--black:hover {
+    background-color: var(--light-grey);
+    color: black;
+}
+
+/* MAIN GRID */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2.77fr 1fr 2.77fr;
+    place-items: center center;
+}
+
+.cell__image {
+    grid-column: span 2;
+}
+
+.cell__text {
+    padding: 0 112px;
+}
+
+.cell__text--black {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.cell__title {
+    margin-bottom: 21px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 48px;
+    opacity: .6;
+}
