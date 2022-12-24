@@ -106,20 +106,45 @@ h4 {
 
 /* BOTONES */
 
-.button--black {
-    background-color: black;
-    color: white;
-    padding: .75rem 1.5rem;
+.button {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+    color: black
 }
 
-.button--black:hover {
+.button--rectangle {
+    padding: .75rem 1.5rem;
+}
+
+.button--black {
+    background-color: black;
+    color: white;
+}
+
+.button--rectangle:hover {
     background-color: var(--light-grey);
     color: black;
+}
+
+.button--arrow {
+    position: relative;
+}
+
+.button--arrow::after {
+    content: '';
+    position: absolute;
+    background-image: url("../assets/shared/desktop/arrow-black.svg");
+    width: 43px;
+    height: 14px;
+    top: 0;
+    left: calc(100% + 18px);
+}
+
+.button--arrow--white::after {
+    background-image: url("../assets/shared/desktop/arrow-white.svg");
 }
 
 /* MAIN GRID */
@@ -127,19 +152,19 @@ h4 {
 .main-grid {
     display: grid;
     grid-template-columns: 2.77fr 1fr 2.77fr;
-    place-items: center center;
 }
 
 .cell__image {
     grid-column: span 2;
 }
 
-.cell__text {
+.grid__item {
     padding: 0 112px;
+    display: flex;
+    align-items: center;
 }
 
-.cell__text--black {
-    height: 100%;
+.grid__item--black {
     background-color: black;
     color: white;
 }
