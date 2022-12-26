@@ -13,7 +13,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px dashed rgba(255, 0, 0, 0.4);
+    outline: 0px dashed rgba(255, 0, 0, .4);
 }
 
 img {
@@ -33,7 +33,7 @@ li {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'DM Sans', sans-serif;
     max-width: 1440px;
 }
@@ -72,8 +72,8 @@ h4 {
 /* HEADER Y NAV */
 
 .header {
-    height: 72px;
-    padding: 0 165px;
+    height: 4.5rem;
+    padding: 0 10.375rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@ h4 {
 }
 
 .nav__link {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
     color: black;
@@ -111,7 +111,7 @@ h4 {
 /* BOTONES */
 
 .button {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -119,7 +119,8 @@ h4 {
     color: black
 }
 
-.main-grid .button:hover {
+.primary-grid .button:hover,
+.footer .button:hover {
     text-decoration: underline;
 }
 
@@ -141,6 +142,10 @@ h4 {
     position: relative;
 }
 
+.footer .button--arrow {
+    right: calc(43px + 18px);
+}
+
 .button--arrow::after {
     content: '';
     position: absolute;
@@ -156,8 +161,10 @@ h4 {
 }
 
 .button--story {
+    display: block;
     color: white;
     position: relative;
+    width: 100%;
 }
 
 .button--story::after {
@@ -167,36 +174,36 @@ h4 {
     width: 43px;
     height: 14px;
     top: 0;
-    left: 235px;
+    right: 0;
 }
 
-/* MAIN GRID */
+/* PRIMARY GRID */
 
-.main-grid {
+.primary-grid {
     display: grid;
     grid-template-columns: 2.77fr 1fr 2.77fr;
 }
 
-.cell__image {
+.card__image {
     grid-column: span 2;
 }
 
-.grid__item {
-    padding: 0 112px;
+.card__container {
+    padding: 0 7rem;
     display: flex;
     align-items: center;
 }
 
-.grid__item--black {
+.card__container--black {
     background-color: black;
     color: white;
 }
 
-.cell__title {
+.card__title {
     margin-bottom: 21px;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 3rem;
     letter-spacing: 4.17px;
     text-transform: uppercase;
 }
@@ -204,8 +211,12 @@ h4 {
 .text {
     font-size: 15px;
     line-height: 25px;
-    margin-bottom: 48px;
     opacity: .6;
+    margin: 0;
+}
+
+.primary-grid .text {
+    margin-bottom: 3rem;
 }
 
 /* STORIES GRID */
@@ -223,7 +234,7 @@ h4 {
 }
 
 .story:hover {
-    transform: translateY(-24px);
+    transform: translateY(-1.5rem);
 }
 
 .story::before {
@@ -253,12 +264,12 @@ h4 {
 
 .story__text {
     color: white;
-    padding: 0 40px 40px 40px;
+    padding: 0 2.5rem 2.5rem 2.5rem;
     z-index: 10;
 }
 
 .story__title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     margin: 0 0 4px;
 }
@@ -277,4 +288,84 @@ h4 {
     background-color: #979797;
     top: 2rem;
     left: 0;
+}
+
+/* FEATURES GRID */
+
+.features {
+    max-width: 70rem;
+    min-height: 30rem;
+    margin: 0 auto;
+    padding: 7.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+}
+
+.features__card {
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
+}
+
+.features__text {
+    text-align: center;
+    min-height: 7.25rem;
+}
+
+.feature__title {
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 4rem 10.5rem;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2.2fr 1fr;
+}
+
+.footer>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer :last-child {
+    align-items: flex-end;
+}
+
+.social {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.83rem;
+}
+
+.social__logo {
+    fill: white;
+}
+
+.social__logo:hover {
+    fill: url(#a);
+}
+
+.footer__list {
+    gap: 19px;
+}
+
+.footer__link {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 15px;
+    opacity: .5;
 }
