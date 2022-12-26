@@ -354,21 +354,12 @@ h4 {
     gap: 0.83rem;
 }
 
-.social__logo {
-    fill: white;
-}
-
-.social__logo:hover {
-    fill: url(#a);
-}
-
 .footer__list {
     gap: 19px;
 }
 
 .footer__link {
     font-size: 0.75rem;
-    font-weight: 400;
     letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
@@ -379,8 +370,28 @@ h4 {
     opacity: .3;
 }
 
-.copyright {
-    margin: 0;
-    font-size: 15px;
-    opacity: .5;
+/* SVG SOCIAL LOGOS */
+
+.social__logo__path {
+    fill: white;
+}
+
+.social__link:hover #fb__path {
+    fill: url(#fb);
+}
+
+.social__link:hover #yt__path {
+    fill: url(#yt);
+}
+
+.social__link:hover #tw__path {
+    fill: url(#tw);
+}
+
+.social__link:hover #pi__path {
+    fill: url(#pi);
+}
+
+.social__link:hover #ig__path {
+    fill: url(#ig);
 }
