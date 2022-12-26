@@ -3,13 +3,17 @@
     --accent-orange: #ffc593;
     --accent-pink: #bc7198;
     --accent-blue: #5a77ff;
+    --gradient: linear-gradient(45deg,
+            var(--accent-orange),
+            var(--accent-pink),
+            var(--accent-blue));
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px dashed rgba(255, 0, 0, 0.2);
+    outline: 1px dashed rgba(255, 0, 0, 0.4);
 }
 
 img {
@@ -115,6 +119,10 @@ h4 {
     color: black
 }
 
+.main-grid .button:hover {
+    text-decoration: underline;
+}
+
 .button--rectangle {
     padding: .75rem 1.5rem;
 }
@@ -145,6 +153,21 @@ h4 {
 
 .button--arrow--white::after {
     background-image: url("../assets/shared/desktop/arrow-white.svg");
+}
+
+.button--story {
+    color: white;
+    position: relative;
+}
+
+.button--story::after {
+    content: '';
+    position: absolute;
+    background-image: url("../assets/shared/desktop/arrow-white.svg");
+    width: 43px;
+    height: 14px;
+    top: 0;
+    left: 235px;
 }
 
 /* MAIN GRID */
@@ -183,4 +206,75 @@ h4 {
     line-height: 25px;
     margin-bottom: 48px;
     opacity: .6;
+}
+
+/* STORIES GRID */
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.story {
+    display: grid;
+    align-items: end;
+    position: relative;
+    transition: transform 500ms;
+}
+
+.story:hover {
+    transform: translateY(-24px);
+}
+
+.story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.story:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .5rem;
+    bottom: -.5rem;
+    left: 0;
+    background-image: var(--gradient);
+}
+
+.story>* {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.story__text {
+    color: white;
+    padding: 0 40px 40px 40px;
+    z-index: 10;
+}
+
+.story__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.story__author {
+    font-size: 13px;
+    margin: 0 0 37px;
+    position: relative;
+}
+
+.story__author::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #979797;
+    top: 2rem;
+    left: 0;
 }
