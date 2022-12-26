@@ -197,6 +197,17 @@ h4 {
 .card__container--black {
     background-color: black;
     color: white;
+    position: relative;
+}
+
+.card__container--black::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 300px;
+    background-image: var(--gradient);
+    top: 180px;
+    left: 0;
 }
 
 .card__title {
@@ -362,6 +373,10 @@ h4 {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.footer__link:hover {
+    opacity: .3;
 }
 
 .copyright {
