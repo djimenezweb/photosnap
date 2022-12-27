@@ -13,7 +13,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px dashed rgba(255, 0, 0, .4);
+    outline: 0px dashed rgba(255, 0, 0, .4);
 }
 
 img {
@@ -23,7 +23,11 @@ img {
 
 nav,
 ul,
-li {
+li,
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     padding: 0;
 }
@@ -36,13 +40,6 @@ body {
     margin: 0 auto;
     font-family: 'DM Sans', sans-serif;
     max-width: 1440px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
 }
 
 /* h1 {
@@ -72,6 +69,7 @@ h4 {
 /* HEADER Y NAV */
 
 .header {
+    position: relative;
     height: 4.5rem;
     padding: 0 1.5rem;
     display: flex;
@@ -96,6 +94,7 @@ h4 {
 }
 
 .nav--show {
+    display: block;
     position: absolute;
     width: 100vw;
     height: 16rem;
@@ -104,6 +103,17 @@ h4 {
     top: 4.5rem;
     left: 0;
     z-index: 100;
+}
+
+.nav--show::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
