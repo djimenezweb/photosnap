@@ -48,6 +48,9 @@
   <main>
 
     <div class="primary-grid">
+      <div class="card__image">
+        <img src="assets/home/desktop/create-and-share.jpg" alt="Fotógrafo en una zona acuática">
+      </div>
       <div class="card__container card__container--black">
         <div class="card__text">
           <h2 class="card__title">Create and share your photo Stories.</h2>
@@ -57,8 +60,6 @@
           </p>
           <a href="#" class="button button--black button--arrow button--arrow--white">Get an invite</a>
         </div>
-      </div>
-      <div class="card__image"><img src="assets/home/desktop/create-and-share.jpg" alt="Fotógrafo en una zona acuática">
       </div>
       <div class="card__image"><img src="assets/home/desktop/beautiful-stories.jpg"
           alt="Ordenador portátil en un escritorio con otros objetos"></div>
@@ -72,6 +73,9 @@
           <a href="#" class="button button--arrow">View the stories</a>
         </div>
       </div>
+      <div class="card__image">
+        <img src="assets/home/desktop/designed-for-everyone.jpg" alt="Operador de cámara">
+      </div>
       <div class="card__container">
         <div class="card__text">
           <h2 class="card__title">Designed for everyone</h2>
@@ -82,12 +86,17 @@
           <a href="#" class="button button--arrow">View the stories</a>
         </div>
       </div>
-      <div class="card__image"><img src="assets/home/desktop/designed-for-everyone.jpg" alt="Operador de cámara"></div>
     </div>
 
     <div class="stories-grid">
       <div class="story">
-        <div class="story__image"><img src="assets/stories/desktop/mountains.jpg" alt="Montaña"></div>
+        <div class="story__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/stories/desktop/mountains.jpg">
+            <source media="(min-width: 200px)" srcset="assets/stories/mobile/mountains.jpg">
+            <img src="assets/stories/desktop/mountains.jpg" alt="Montaña">
+          </picture>
+        </div>
         <div class="story__text">
           <h3 class="story__title">The Mountains</h3>
           <p class="story__author">by John Appleseed</p>
@@ -95,7 +104,13 @@
         </div>
       </div>
       <div class="story">
-        <div class="story__image"><img src="assets/stories/desktop/cityscapes.jpg" alt="Rascacielos"></div>
+        <div class="story__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/stories/desktop/cityscapes.jpg">
+            <source media="(min-width: 200px)" srcset="assets/stories/mobile/cityscapes.jpg">
+            <img src="assets/stories/desktop/cityscapes.jpg" alt="Rascacielos">
+          </picture>
+        </div>
         <div class="story__text">
           <h3 class="story__title">Sunset Cityscapes</h3>
           <p class="story__author">by Benjamin Cruz</p>
@@ -103,7 +118,13 @@
         </div>
       </div>
       <div class="story">
-        <div class="story__image"><img src="assets/stories/desktop/18-days-voyage.jpg" alt="Senderista"></div>
+        <div class="story__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/stories/desktop/18-days-voyage.jpg">
+            <source media="(min-width: 200px)" srcset="assets/stories/mobile/18-days-voyage.jpg">
+            <img src="assets/stories/desktop/18-days-voyage.jpg" alt="Senderista">
+          </picture>
+        </div>
         <div class="story__text">
           <h3 class="story__title">18 Days Voyage</h3>
           <p class="story__author">by Alexei Borodin</p>
@@ -111,7 +132,13 @@
         </div>
       </div>
       <div class="story">
-        <div class="story__image"><img src="assets/stories/desktop/architecturals.jpg" alt="Edificio moderno"></div>
+        <div class="story__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/stories/desktop/architecturals.jpg">
+            <source media="(min-width: 200px)" srcset="assets/stories/mobile/architecturals.jpg">
+            <img src="assets/stories/desktop/architecturals.jpg" alt="Edificio moderno">
+          </picture>
+        </div>
         <div class="story__text">
           <h3 class="story__title">Architecturals</h3>
           <p class="story__author">by Samantha Booke</p>
