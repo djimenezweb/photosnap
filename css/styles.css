@@ -290,10 +290,20 @@ body {
 
 /* PRIMARY GRID */
 
+.primary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.card__image img {
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .primary-grid {
         display: grid;
-        grid-template-columns: 1.23fr 1fr 1.23fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .primary-grid :nth-child(1) {
@@ -358,6 +368,12 @@ body {
 @media screen and (min-width: 768px) {
     .card__container {
         min-height: auto;
+        padding: 0 3.375rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .card__container {
         padding: 0 7rem;
     }
 }
@@ -382,8 +398,14 @@ body {
     .card__container--black::before {
         width: 6px;
         height: 309px;
-        top: 167px;
+        top: 150px;
         left: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .card__container--black::before {
+        top: 167px;
     }
 }
 
@@ -409,7 +431,17 @@ body {
     justify-content: center;
 }
 
+.story__image img {
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
     .stories-grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -421,13 +453,11 @@ body {
     position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (hover: hover) and (min-width: 768px) {
     .story {
         transition: transform 500ms;
     }
-}
 
-@media screen and (hover: hover) and (min-width: 768px) {
     .story:hover {
         transform: translateY(-1.5rem);
     }
@@ -495,6 +525,12 @@ body {
 
 @media screen and (min-width: 768px) {
     .features {
+        max-width: 460px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .features {
         max-width: 70rem;
         min-height: 30rem;
         padding: 7.5rem 0;
@@ -531,8 +567,14 @@ body {
 
 @media screen and (min-width: 768px) {
     .footer {
-        padding: 4rem 10.5rem;
+        padding: 4rem 2.5rem;
         grid-template-columns: 1fr 2.2fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        padding: 4rem 10.5rem;
     }
 }
 
