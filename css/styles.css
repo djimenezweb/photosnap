@@ -398,7 +398,7 @@ body {
     .card__container--black::before {
         width: 6px;
         height: 309px;
-        top: 150px;
+        top: calc(50% - 154px);
         left: 0;
     }
 }
