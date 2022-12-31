@@ -19,7 +19,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px dashed rgba(255, 0, 0, .4);
+    outline: 0px dashed rgba(255, 0, 0, .4);
 }
 
 img {
@@ -291,7 +291,7 @@ body {
 
 .stories-grid {
     display: grid;
-    grid-template-columns: min(375px, 100%);
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 

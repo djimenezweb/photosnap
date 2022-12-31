@@ -49,7 +49,7 @@ a {
 body {
     margin: 0 auto;
     font-family: 'DM Sans', sans-serif;
-    max-width: 1440px;
+    max-width: 1920px;
 }
 
 /* TEXTOS */
@@ -402,12 +402,6 @@ body {
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .card__container--black::before {
-        top: 167px;
-    }
-}
-
 .card__title {
     margin-bottom: 21px;
 }
@@ -426,7 +420,7 @@ body {
 
 .stories-grid {
     display: grid;
-    grid-template-columns: min(375px, 100%);
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
