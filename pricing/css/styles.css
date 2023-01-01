@@ -19,7 +19,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 0px dashed rgba(255, 0, 0, .4);
+    outline: 1px dashed rgba(255, 0, 0, .4);
 }
 
 img {
@@ -414,7 +414,6 @@ body {
     height: 2rem;
     border-radius: 2rem;
     background-color: #dfdfdf;
-    cursor: pointer;
 }
 
 .label-toggle::after {
@@ -462,7 +461,6 @@ body {
 .toggle:checked~.option__yearly {
     color: rgba(0, 0, 0, 1);
 }
-
 
 /* PRICING */
 
@@ -570,6 +568,30 @@ body {
     }
 }
 
+
+/* COMPARE TABLE (TABLET & DESKTOP */
+
+.compare__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.compare__row {
+    width: 731px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.compare__label:first-child {
+    width: 360px;
+}
 
 /* BETA CARD */
 
