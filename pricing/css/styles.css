@@ -217,6 +217,11 @@ body {
     color: white;
 }
 
+.button--white {
+    background-color: white;
+    color: black;
+}
+
 @media (hover: hover) {
     .button:hover {
         background-color: var(--light-grey);
@@ -293,6 +298,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 .card__image img {
@@ -303,6 +309,7 @@ body {
     .primary-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 7rem;
     }
 
     .primary-grid :nth-child(1) {
@@ -320,6 +327,7 @@ body {
     .primary-grid {
         display: grid;
         grid-template-columns: 2.77fr 1fr 2.77fr;
+        margin-bottom: 7.5rem;
     }
 
     .primary-grid :nth-child(2) {
@@ -390,52 +398,176 @@ body {
     margin-bottom: 21px;
 }
 
+/* PRICING TOGGLE */
 
-/* FEATURES GRID */
-
-.features {
-    padding: 5rem 0;
-    max-width: 310px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
+.pricing__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-    .features {
-        max-width: 690px;
+.label-toggle {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+.label-toggle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    border: 0.25rem solid #dfdfdf;
+    transition: transform 250ms;
+}
+
+.toggle:checked~.label-toggle {
+    background-color: black;
+}
+
+.toggle:checked~.label-toggle::after {
+    transform: translateX(100%);
+    background-color: white;
+    border: 0.25rem solid black;
+}
+
+.option__monthly,
+.option__yearly {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.option__monthly {
+    order: -1;
+    color: rgba(0, 0, 0, 1);
+}
+
+.option__yearly {
+    color: rgba(0, 0, 0, .5);
+}
+
+.toggle:checked~.option__monthly {
+    color: rgba(0, 0, 0, .5);
+}
+
+.toggle:checked~.option__yearly {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+/* PRICING */
+
+.pricing-container {
+    padding: 0 1.75rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.pricing-container p {
+    margin: 0;
+}
+
+.pricing-container .button {
+    width: 245px;
+}
+
+.pricing__box {
+    background-color: #f5f5f5;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 18px;
+    padding: 2.5rem 1.375rem;
+}
+
+.pricing__box--black {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.pricing__box--black::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-image: var(--gradient);
+    top: 0;
+    left: 0;
+}
+
+.pricing__description>* {
+    text-align: center;
+}
+
+.pricing__description h2 {
+    margin: 0 0 18px;
+}
+
+.pricing__month,
+.pricing__year {
+    text-align: center;
+    padding: 22px 0;
+}
+
+.pricing__year {
+    display: none;
+}
+
+.toggle:checked>.pricing__year {
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .pricing__box {
         grid-template-columns: 1fr 1fr;
-        column-gap: 1rem;
-        row-gap: 4.5rem;
+        justify-items: start;
+        padding: 2.5rem 3rem 2.5rem 2.5rem;
+    }
+
+    .pricing__box--black::before {
+        width: 6px;
+        height: 100%;
+    }
+
+    .pricing__description>* {
+        text-align: left;
+        width: 270px
+    }
+
+    .pricing__month,
+    .pricing__year {
+        justify-self: end;
+        padding: 0;
+    }
+
+    .pricing-container .button {
+        width: 270px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .features {
-        max-width: 70rem;
-        min-height: 30rem;
-        padding: 7.5rem 0;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1.875rem;
-        row-gap: 6.5rem;
+    .pricing-container {
+        width: 1110px;
+        margin-inline: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.875rem;
+        align-items: center;
+        padding: 2rem 0;
     }
-}
 
-.features__card {
-    min-height: 236px;
-    display: grid;
-    justify-items: center;
-    align-content: space-between;
-}
-
-.features__text {
-    text-align: center;
-    min-height: 7.25rem;
-}
-
-.feature__title {
-    margin-bottom: 1rem;
+    .pricing__box--black {
+        height: calc(100% + 4rem);
+    }
 }
 
 
