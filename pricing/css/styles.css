@@ -468,6 +468,7 @@ body {
     padding: 0 1.75rem;
     display: grid;
     gap: 1.5rem;
+    margin-bottom: 7rem;
 }
 
 .pricing-container p {
@@ -556,7 +557,7 @@ body {
 @media screen and (min-width: 1280px) {
     .pricing-container {
         width: 1110px;
-        margin-inline: auto;
+        margin: 0 auto 10rem;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.875rem;
         align-items: center;
@@ -568,8 +569,50 @@ body {
     }
 }
 
+.yearly .pricing__year {
+    display: block;
+}
 
-/* COMPARE TABLE (TABLET & DESKTOP */
+.yearly .pricing__month {
+    display: none;
+}
+
+/* COMPARE TABLE (MOBILE) */
+
+.table--large {
+    display: none;
+}
+
+.table--small {
+    margin: 0 auto 4rem;
+    max-width: 318px;
+}
+
+/* COMPARE TABLE (TABLET & DESKTOP) */
+
+@media screen and (min-width: 768px) {
+
+    .table-small {
+        display: none;
+    }
+
+    .table--large {
+        display: block;
+        margin: 0 auto 10rem;
+        max-width: 689px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .table--large {
+        max-width: 731px;
+    }
+}
+
+.table--large h2 {
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
 
 .compare__label {
     padding: 1.5rem;
@@ -577,11 +620,17 @@ body {
 }
 
 .compare__row {
-    width: 731px;
+    width: 689px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #DFDFDF;
+}
+
+@media screen and (min-width: 1280px) {
+    .compare__row {
+        width: 731px;
+    }
 }
 
 h2+.compare__row {
