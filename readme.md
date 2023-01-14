@@ -4,15 +4,21 @@
 
 ## Ejemplo en vivo
 
-- [Vista en vivo](https://djimenezweb.github.io/photosnap)
+- [Vista en vivo de la página web](https://www.djimenezweb.com/photosnap/)
 
 ## Descripción 📑
 
-Proyecto de [Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW) de una página para compartir fotos.
+Proyecto de [Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW) de una página web para compartir fotos. El proyecto entero se compone de una landing page y tres páginas adicionales (stories, features y pricing). Todas las páginas están adaptadas a móvil, tableta y escritorio. La versión para móvil tiene un menú responsive. El lenguaje está fuertemente orientado a HTML y CSS, con un poquito de JavaScript.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Proyecto en desarrollo.
+En esta web me propuse hacer un uso intensivo de grid, pues es especialmente potente para alinear contenido. No sólo me basé en grid para hacer la rejilla de fotos, sino que cada una de las tarjetas es asimismo una rejilla grid de 1×1. De esta manera es muchísimo más fácil alinear el texto sobre la imagen.
+
+También he practicado mucho los selectores combinados, hasta tal punto que algunos elementos no tienen ninguna clase. Aunque se desaconseja su uso por cuestiones de especificidad, no me he encontrado con ningún problema y me ha parecido un método especialmente flexible para aplicar pequeños estilos en concreto.
+
+Ha sido un trabajo del que estoy especialmente orgulloso por la rapidez que me llevó hacer la mayoría de las páginas. Sin embargo, la página de pricing está todavía en construcción pues todavía no logro dar con el mejor método para hacer una tabla responsive.
+
+Como grandes puntos a mejorar, creo que debería plantearme el diseño responsive de otra manera. Una parte del problema se debe a que Figma ofrece un diseño a distintos tamaños, pero no da una idea de cuál debería ser el comportamiento de la página. Gran parte de la web está resuelta con media queries para tres tamaños distintos, pero me he empezado a dar cuenta de que hay que buscar soluciones más flexibles que sirvan para todo.
 
 ## Tecnologías 🛠
 
@@ -20,20 +26,7 @@ Proyecto en desarrollo.
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://es.wikipedia.org/wiki/HTML5)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://es.wikipedia.org/wiki/CSS)
-[![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](https://es.wikipedia.org/wiki/Sass)
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
-
-## Vista previa del proyecto
-
-Todavía no hay vista previa, el proyecto está en desarrollo.
-
-<!--
-Si quieres echar un vistazo al proyecto, te recomiendo:
-
-![Captura del proyecto para escritorio](https://github.com/djimenezweb/loopstudios/blob/main/design/desktop-design.jpg?raw=true)
-
-<img src="https://github.com/djimenezweb/loopstudios/blob/main/design/mobile-design.jpg?raw=true" alt="Captura del proyecto para móvil" width="300px">
--->
 
 ## Autor ✒️
 
