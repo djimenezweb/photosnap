@@ -1,8 +1,0 @@
-@media screen and (min-width: 768px) {
-  .card__container--black::before {
-    width: 6px;
-    height: 144px;
-    top: calc(50% - 72px);
-    left: 0;
-  }
-}
