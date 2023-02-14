@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photosnap</title>
+    <title>Photosnap | Features</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
@@ -27,13 +27,13 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- FAVICON END -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/features-styles.css" />
     <script src="js/scripts.js" defer></script>
   </head>
 
   <body>
     <header class="header">
-      <img src="assets/shared/desktop/logo.svg" alt="Photosnap Logo" />
+      <a href="#"><img src="assets/shared/desktop/logo.svg" alt="Photosnap Logo" /></a>
       <img id="menu-icon" class="hamburger" src="assets/shared/mobile/menu.svg" alt="Menu icon" />
       <nav id="navigation" class="nav">
         <ul class="nav__list">
@@ -49,114 +49,18 @@
       <div class="primary-grid">
         <div class="card__image">
           <picture>
-            <source media="(min-width: 1280px)" srcset="assets/home/desktop/create-and-share.jpg" />
-            <source media="(min-width: 768px)" srcset="assets/home/tablet/create-and-share.jpg" />
-            <source media="(min-width: 200px)" srcset="assets/home/mobile/create-and-share.jpg" />
-            <img src="assets/home/desktop/create-and-share.jpg" alt="Photographer" />
+            <source media="(min-width: 1280px)" srcset="assets/features/desktop/hero.jpg" />
+            <source media="(min-width: 768px)" srcset="assets/features/tablet/hero.jpg" />
+            <source media="(min-width: 200px)" srcset="assets/features/mobile/hero.jpg" />
+            <img src="assets/features/desktop/hero.jpg" alt="Photographer" />
           </picture>
         </div>
         <div class="card__container card__container--black">
           <div class="card__text">
-            <h2 class="card__title text--xxl">Create and share your photo Stories.</h2>
+            <h1 class="card__title text--xxl">Features</h1>
             <p class="text">
-              Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
+              We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.
             </p>
-            <a href="#" class="arrow-link--white text--xs">Get an invite</a>
-          </div>
-        </div>
-        <div class="card__image">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="assets/home/desktop/beautiful-stories.jpg" />
-            <source media="(min-width: 768px)" srcset="assets/home/tablet/beautiful-stories.jpg" />
-            <source media="(min-width: 200px)" srcset="assets/home/mobile/beautiful-stories.jpg" />
-            <img src="assets/home/desktop/beautiful-stories.jpg" alt="Laptop" />
-          </picture>
-        </div>
-        <div class="card__container">
-          <div class="card__text">
-            <h2 class="card__title text--xxl">Beautiful stories every time</h2>
-            <p class="text">
-              We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share
-              your story with everyone.
-            </p>
-            <a href="stories/" class="arrow-link text--xs">View the stories</a>
-          </div>
-        </div>
-        <div class="card__image">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="assets/home/desktop/designed-for-everyone.jpg" />
-            <source media="(min-width: 768px)" srcset="assets/home/tablet/designed-for-everyone.jpg" />
-            <source media="(min-width: 200px)" srcset="assets/home/mobile/designed-for-everyone.jpg" />
-            <img src="assets/home/desktop/designed-for-everyone.jpg" alt="Cameraman" />
-          </picture>
-        </div>
-        <div class="card__container">
-          <div class="card__text">
-            <h2 class="card__title text--xxl">Designed for everyone</h2>
-            <p class="text">
-              Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses
-              you name it.
-            </p>
-            <a href="stories/" class="arrow-link text--xs">View the stories</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="stories-grid">
-        <div class="story">
-          <div class="story__image">
-            <picture>
-              <source media="(min-width: 768px)" srcset="assets/stories/desktop/mountains.jpg" />
-              <source media="(min-width: 200px)" srcset="assets/stories/mobile/mountains.jpg" />
-              <img src="assets/stories/desktop/mountains.jpg" alt="Mountain" />
-            </picture>
-          </div>
-          <div class="story__text">
-            <h3 class="story__title text--l">The Mountains</h3>
-            <p class="story__author text--s">by John Appleseed</p>
-            <a href="stories/" class="arrow-link--story text--xs">Read story</a>
-          </div>
-        </div>
-        <div class="story">
-          <div class="story__image">
-            <picture>
-              <source media="(min-width: 768px)" srcset="assets/stories/desktop/cityscapes.jpg" />
-              <source media="(min-width: 200px)" srcset="assets/stories/mobile/cityscapes.jpg" />
-              <img src="assets/stories/desktop/cityscapes.jpg" alt="Skyscrapers" />
-            </picture>
-          </div>
-          <div class="story__text">
-            <h3 class="story__title text--l">Sunset Cityscapes</h3>
-            <p class="story__author text--s">by Benjamin Cruz</p>
-            <a href="stories/" class="arrow-link--story text--xs">Read story</a>
-          </div>
-        </div>
-        <div class="story">
-          <div class="story__image">
-            <picture>
-              <source media="(min-width: 768px)" srcset="assets/stories/desktop/18-days-voyage.jpg" />
-              <source media="(min-width: 200px)" srcset="assets/stories/mobile/18-days-voyage.jpg" />
-              <img src="assets/stories/desktop/18-days-voyage.jpg" alt="Hiker" />
-            </picture>
-          </div>
-          <div class="story__text">
-            <h3 class="story__title text--l">18 Days Voyage</h3>
-            <p class="story__author text--s">by Alexei Borodin</p>
-            <a href="stories/" class="arrow-link--story text--xs">Read story</a>
-          </div>
-        </div>
-        <div class="story">
-          <div class="story__image">
-            <picture>
-              <source media="(min-width: 768px)" srcset="assets/stories/desktop/architecturals.jpg" />
-              <source media="(min-width: 200px)" srcset="assets/stories/mobile/architecturals.jpg" />
-              <img src="assets/stories/desktop/architecturals.jpg" alt="Modern building" />
-            </picture>
-          </div>
-          <div class="story__text">
-            <h3 class="story__title text--l">Architecturals</h3>
-            <p class="story__author text--s">by Samantha Booke</p>
-            <a href="stories/" class="arrow-link--story text--xs">Read story</a>
           </div>
         </div>
       </div>
@@ -165,25 +69,64 @@
         <article class="features__card">
           <img src="assets/features/desktop/responsive.svg" alt="Digital devices" />
           <div class="features__text">
-            <h3 class="feature__title text--l">100% Responsive</h3>
+            <h2 class="feature__title text--l">100% Responsive</h2>
             <p class="text">No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.</p>
           </div>
         </article>
+
         <article class="features__card">
           <img src="assets/features/desktop/no-limit.svg" alt="Infinite symbol" />
           <div class="features__text">
-            <h3 class="feature__title text--l">No Photo Upload Limit</h3>
+            <h2 class="feature__title text--l">No Photo Upload Limit</h2>
             <p class="text">Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
           </div>
         </article>
+
         <article class="features__card">
           <img src="assets/features/desktop/embed.svg" alt="Laptop with icons" />
           <div class="features__text">
-            <h3 class="feature__title text--l">Available to Embed</h3>
+            <h2 class="feature__title text--l">Available to Embed</h2>
             <p class="text">Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.</p>
           </div>
         </article>
+
+        <article class="features__card">
+          <img src="assets/features/desktop/custom-domain.svg" alt="" />
+          <div class="features__text">
+            <h2 class="feature__title text--l">Custom Domain</h2>
+            <p class="text">With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!</p>
+          </div>
+        </article>
+
+        <article class="features__card">
+          <img src="assets/features/desktop/boost-exposure.svg" alt="" />
+          <div class="features__text">
+            <h2 class="feature__title text--l">Boost Your Exposure</h2>
+            <p class="text">Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.</p>
+          </div>
+        </article>
+
+        <article class="features__card">
+          <img src="assets/features/desktop/drag-drop.svg" alt="" />
+          <div class="features__text">
+            <h2 class="feature__title text--l">Drag & Drop Image</h2>
+            <p class="text">Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.</p>
+          </div>
+        </article>
       </div>
+
+      <article class="beta-card">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="assets/shared/desktop/bg-beta.jpg" />
+          <source media="(min-width: 768px)" srcset="assets/shared/tablet/bg-beta.jpg" />
+          <source media="(min-width: 200px)" srcset="assets/shared/mobile/bg-beta.jpg" />
+          <img src="assets/shared/desktop/bg-beta.jpg" alt="Cave" />
+        </picture>
+        <div class="beta-card__text">
+          <h2 class="card__title text--xxl">We're in Beta. Get your invite today!</h2>
+          <a href="#" class="arrow-link--white text--xs">Get an invite</a>
+        </div>
+      </article>
     </main>
 
     <footer class="footer">
@@ -213,7 +156,7 @@
       </div>
 
       <ul class="footer__list">
-        <li><a class="footer__link text--xs" href="../">Home</a></li>
+        <li><a class="footer__link text--xs" href="#">Home</a></li>
         <li><a class="footer__link text--xs" href="stories.html">Stories</a></li>
         <li><a class="footer__link text--xs" href="features.html">Features</a></li>
         <li><a class="footer__link text--xs" href="pricing.html">Pricing</a></li>
