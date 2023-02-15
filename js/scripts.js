@@ -1,7 +1,7 @@
 const iconElement = document.getElementById('menu-icon');
 const navElement = document.getElementById('navigation');
 
-const toggleElement = document.getElementById('toggle');
+const toggleCheckboxElement = document.getElementById('toggle-checkbox');
 const pricingContainerElement = document.getElementById('pricing-container');
 const priceElements = document.querySelectorAll('[data-price]');
 const periodElements = document.querySelectorAll('[data-period]');
@@ -22,7 +22,7 @@ const printPrices = (pricePeriod, string) => {
 };
 
 const updatePrices = () => {
-  toggle.checked ? printPrices('priceYear', 'per year') : printPrices('priceMonth', 'per month');
+  toggleCheckboxElement.checked ? printPrices('priceYear', 'per year') : printPrices('priceMonth', 'per month');
 };
 
 iconElement.addEventListener('click', () => {
@@ -32,9 +32,10 @@ iconElement.addEventListener('click', () => {
     iconElement.src = 'assets/shared/mobile/close.svg';
   }
   navElement.classList.toggle('nav--show');
+  document.body.classList.toggle('overflow-hidden');
 });
 
-if (toggleElement) {
-  toggleElement.addEventListener('change', updatePrices);
+if (toggleCheckboxElement) {
+  toggleCheckboxElement.addEventListener('change', updatePrices);
   updatePrices();
 }

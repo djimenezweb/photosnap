@@ -28,9 +28,7 @@ nav,
 ul,
 li,
 h1,
-h2,
-h3,
-h4 {
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -47,6 +45,10 @@ body {
   margin: 0 auto;
   font-family: 'DM Sans', sans-serif;
   max-width: 1920px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 /* TEXTOS */
@@ -136,7 +138,6 @@ body {
   display: block;
   position: absolute;
   width: 100vw;
-  height: 16rem;
   padding: 2rem;
   background-color: #fff;
   top: 4.5rem;
@@ -144,7 +145,7 @@ body {
   z-index: 100;
 }
 
-.nav--show::after {
+.nav--show::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -246,6 +247,19 @@ body {
 .arrow-link--white {
   position: relative;
   color: inherit;
+}
+
+.text + .arrow-link,
+.text + .arrow-link--white {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text + .arrow-link,
+  .text + .arrow-link--white {
+    margin-top: 3rem;
+  }
 }
 
 .arrow-link::after,
@@ -360,19 +374,6 @@ body {
 .card__container {
   display: flex;
   align-items: center;
-  padding: 5rem 1.75rem;
-}
-
-@media screen and (min-width: 768px) {
-  .card__container {
-    padding: 0 3.375rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .card__container {
-    padding: 0 7rem;
-  }
 }
 
 .card__container--black {
@@ -381,52 +382,48 @@ body {
   position: relative;
 }
 
-.card__container--black::before {
+.card__text {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .card__text {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 3.375rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__text {
+    padding: 0 7rem;
+  }
+}
+
+.card__container--black .card__text::before {
   content: '';
   position: absolute;
   width: 128px;
   height: 6px;
   background-image: var(--gradient);
   top: 0;
-  left: 1.75rem;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .card__container--black::before {
+  .card__container--black .card__text::before {
     width: 6px;
-    height: 309px;
-    top: calc(50% - 154px);
-    left: 0;
+    height: 100%;
   }
-}
-
-.card__text {
-  background-color: gray;
-  position: relative;
-}
-
-.card__text::before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background-color: blue;
-  top: 0;
-  left: 0;
 }
 
 .card__title {
   margin-bottom: 21px;
-}
-
-.primary-grid .text {
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .primary-grid .text {
-    margin-bottom: 3rem;
-  }
 }
 
 /* STORIES GRID */
@@ -575,6 +572,12 @@ body {
   }
 }
 
+@media (hover: hover) {
+  .story__hero .arrow-link--white:hover {
+    text-decoration: underline;
+  }
+}
+
 /* FEATURES GRID */
 
 .features {
@@ -659,6 +662,12 @@ body {
   width: 100%;
 }
 
+@media (hover: hover) {
+  .beta-card .arrow-link--white:hover {
+    text-decoration: underline;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .beta-card::before {
     width: 6px;
@@ -722,11 +731,11 @@ body {
   transition: transform 250ms;
 }
 
-.toggle:checked ~ .label-toggle {
+.toggle-chekbox:checked ~ .label-toggle {
   background-color: black;
 }
 
-.toggle:checked ~ .label-toggle::after {
+.toggle-checkbox:checked ~ .label-toggle::after {
   transform: translateX(100%);
   background-color: white;
   border: 0.25rem solid black;
@@ -747,11 +756,11 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.toggle:checked ~ .option__monthly {
+.toggle-checkbox:checked ~ .option__monthly {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.toggle:checked ~ .option__yearly {
+.toggle-checkbox:checked ~ .option__yearly {
   color: rgba(0, 0, 0, 1);
 }
 
