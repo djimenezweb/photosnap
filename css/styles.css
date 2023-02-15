@@ -6,6 +6,18 @@
   --gradient: linear-gradient(45deg, var(--accent-orange), var(--accent-pink), var(--accent-blue));
 }
 
+@font-face {
+  font-family: 'Local DM Sans';
+  font-weight: 400;
+  src: url('../assets/fonts/dmsans-regular.woff2') format('woff2'), url('../assets/fonts/dmsans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Local DM Sans';
+  font-weight: 700;
+  src: url('../assets/fonts/dmsans-bold.woff2') format('woff2'), url('../assets/fonts/dmsans-bold.woff') format('woff');
+}
+
 /*
 - Mobile: 320px
 - Tablet: 768px
@@ -43,7 +55,7 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Local DM Sans', sans-serif;
   max-width: 1920px;
 }
 
