@@ -7,13 +7,13 @@
 }
 
 @font-face {
-  font-family: 'Local DM Sans';
+  font-family: 'LocalDMSans';
   font-weight: 400;
   src: url('../assets/fonts/dmsans-regular.woff2') format('woff2'), url('../assets/fonts/dmsans-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Local DM Sans';
+  font-family: 'LocalDMSans';
   font-weight: 700;
   src: url('../assets/fonts/dmsans-bold.woff2') format('woff2'), url('../assets/fonts/dmsans-bold.woff') format('woff');
 }
@@ -55,7 +55,7 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'Local DM Sans', sans-serif;
+  font-family: 'LocalDMSans', sans-serif;
   max-width: 1920px;
 }
 
