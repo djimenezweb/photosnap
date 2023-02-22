@@ -8,15 +8,17 @@
 
 ## Descripción 📑
 
-Proyecto de [Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW) de una página web para compartir fotos. El proyecto entero se compone de una landing page y tres páginas adicionales (stories, features y pricing). Todas las páginas están adaptadas a móvil, tableta y escritorio. La versión para móvil tiene un menú responsive. El lenguaje está fuertemente orientado a HTML y CSS, con un poquito de JavaScript.
+Proyecto de [Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW) de una página web para compartir fotos. El proyecto entero se compone de una landing page y tres páginas adicionales (Stories, Features y Pricing). Todas las páginas están adaptadas a móvil, tableta y escritorio. La versión para móvil tiene un menú responsive. El lenguaje está fuertemente orientado a HTML y CSS, con un poco de JavaScript.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
 En esta web me propuse hacer un uso intensivo de grid, pues es especialmente potente para alinear contenido. No sólo me basé en grid para hacer la rejilla de fotos, sino que cada una de las tarjetas es asimismo una rejilla grid de 1×1. De esta manera es muchísimo más fácil alinear el texto sobre la imagen.
 
-También he practicado mucho los selectores combinados, hasta tal punto que algunos elementos no tienen ninguna clase. Aunque se desaconseja su uso por cuestiones de especificidad, no me he encontrado con ningún problema y me ha parecido un método especialmente flexible para aplicar pequeños estilos en concreto.
+También he practicado mucho los selectores combinados. Aunque se desaconseja su uso por cuestiones de especificidad, no me he encontrado con ningún problema y me ha parecido un método especialmente flexible para aplicar pequeños estilos en concreto.
 
-Ha sido un trabajo del que estoy especialmente orgulloso por la rapidez que me llevó hacer la mayoría de las páginas. Sin embargo, la página de pricing está todavía en construcción pues todavía no logro dar con el mejor método para hacer una tabla responsive.
+Los botones del menú responsive y de cambio de precios están resueltos con JavaScript. En el script de precios hay un objeto con todos los precios posibles y una función que aplica el texto adecuado según el estado del botón.
+
+Ha sido un trabajo del que estoy especialmente orgulloso por la rapidez que me llevó hacer la mayoría de las páginas. Sin embargo, la tabla de precios llevó más trabajo del que tenía pensado.
 
 Como grandes puntos a mejorar, creo que debería plantearme el diseño responsive de otra manera. Una parte del problema se debe a que Figma ofrece un diseño a distintos tamaños, pero no da una idea de cuál debería ser el comportamiento de la página. Gran parte de la web está resuelta con media queries para tres tamaños distintos, pero me he empezado a dar cuenta de que hay que buscar soluciones más flexibles que sirvan para todo.
 

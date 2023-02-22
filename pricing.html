@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others." />
+    <meta property="og:title" content="Photosnap | Pricing" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.djimenezweb.com/photosnap/" />
+    <meta property="og:image" content="https://www.djimenezweb.com/photosnap/assets/shared/mobile/meta-image.jpg" />
     <title>Photosnap | Pricing</title>
     <!-- FAVICON START -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
@@ -43,7 +50,7 @@
     </header>
 
     <main>
-      <div class="primary-grid">
+      <section class="primary-grid">
         <div class="card__image">
           <picture>
             <source media="(min-width: 1280px)" srcset="assets/pricing/desktop/hero.jpg" />
@@ -60,111 +67,117 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="pricing__toggle">
-        <input type="checkbox" class="toggle-checkbox" name="toggle-checkbox" id="toggle-checkbox" hidden />
-        <label class="label-toggle" for="toggle-checkbox" id="toggle-button"></label>
-        <label for="toggle-checkbox" class="option__monthly">Monthly</label>
-        <label for="toggle-checkbox" class="option__yearly">Yearly</label>
-      </div>
+      <section class="pricing">
+        <div class="pricing__toggle">
+          <input type="checkbox" class="toggle-checkbox" name="toggle-checkbox" id="toggle-checkbox" hidden />
+          <label class="label-toggle" for="toggle-checkbox" id="toggle-button"></label>
+          <label for="toggle-checkbox" class="option__monthly">Monthly</label>
+          <label for="toggle-checkbox" class="option__yearly">Yearly</label>
+        </div>
 
-      <div class="pricing-container" id="pricing-container">
-        <article class="pricing__box">
-          <div class="pricing__description">
-            <h2 class="text--xl">Basic</h2>
-            <p class="text">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
-          </div>
-          <div class="pricing__tag">
-            <p class="text--xxl" data-price></p>
-            <p class="text" data-period></p>
-          </div>
-          <a href="#" class="button text--xs">Pick Plan</a>
-        </article>
+        <div class="pricing-container" id="pricing-container">
+          <article class="pricing__box">
+            <div class="pricing__description">
+              <h2 class="text--xl">Basic</h2>
+              <p class="text">Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
+            </div>
+            <div class="pricing__tag">
+              <p class="text--xxl" data-price></p>
+              <p class="text" data-period></p>
+            </div>
+            <a href="#" class="button text--xs">Pick Plan</a>
+          </article>
 
-        <article class="pricing__box pricing__box--black">
-          <div class="pricing__description">
-            <h2 class="text--xl">Pro</h2>
-            <p class="text">More advanced features available. Recommended for photography veterans and professionals.</p>
-          </div>
-          <div class="pricing__tag">
-            <p class="text--xxl" data-price></p>
-            <p class="text" data-period></p>
-          </div>
-          <a href="#" class="button button--white text--xs">Pick Plan</a>
-        </article>
+          <article class="pricing__box pricing__box--black">
+            <div class="pricing__description">
+              <h2 class="text--xl">Pro</h2>
+              <p class="text">More advanced features available. Recommended for photography veterans and professionals.</p>
+            </div>
+            <div class="pricing__tag">
+              <p class="text--xxl" data-price></p>
+              <p class="text" data-period></p>
+            </div>
+            <a href="#" class="button button--white text--xs">Pick Plan</a>
+          </article>
 
-        <article class="pricing__box">
-          <div class="pricing__description">
-            <h2 class="text--xl">Business</h2>
-            <p class="text">Additional features available such as more detailed metrics. Recommended for business owners.</p>
-          </div>
-          <div class="pricing__tag">
-            <p class="text--xxl" data-price></p>
-            <p class="text" data-period></p>
-          </div>
-          <a href="#" class="button text--xs">Pick Plan</a>
-        </article>
-      </div>
+          <article class="pricing__box">
+            <div class="pricing__description">
+              <h2 class="text--xl">Business</h2>
+              <p class="text">Additional features available such as more detailed metrics. Recommended for business owners.</p>
+            </div>
+            <div class="pricing__tag">
+              <p class="text--xxl" data-price></p>
+              <p class="text" data-period></p>
+            </div>
+            <a href="#" class="button text--xs">Pick Plan</a>
+          </article>
+        </div>
+      </section>
 
-      <article class="table--small">
-        <div class="compare__row">
+      <section class="table--small">
+        <div class="compare__row compare__row--head">
           <p class="compare__label text--xs">The Features</p>
-          <p class="check__container text--xs">Basic</p>
-          <p class="check__container text--xs">Pro</p>
-          <p class="check__container text--xs">Business</p>
         </div>
+        <p class="compare__label text--xs">Unlimited Story Posting</p>
         <div class="compare__row">
-          <p class="compare__label text--xs">Unlimited Story Posting</p>
           <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
           <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
           <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
         </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Unlimited Photo Upload</p>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Embedding Custom Content</p>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Customize Metadata</p>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Advanced Metrics</p>
-          <div class="check__container"></div>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Photo Downloads</p>
-          <div class="check__container"></div>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Search Engine Indexing</p>
-          <div class="check__container"></div>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-        <div class="compare__row">
-          <p class="compare__label text--xs">Custom Analytics</p>
-          <div class="check__container"></div>
-          <div class="check__container"></div>
-          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
-        </div>
-      </article>
 
-      <article class="table--large">
+        <p class="compare__label text--xs">Unlimited Photo Upload</p>
+        <div class="compare__row">
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Embedding Custom Content</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Customize Metadata</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Advanced Metrics</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Photo Downloads</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Search Engine Indexing</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+
+        <p class="compare__label text--xs">Custom Analytics</p>
+        <div class="compare__row">
+          <div class="check__container"></div>
+          <div class="check__container"></div>
+          <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
+        </div>
+      </section>
+
+      <section class="table--large">
         <h2 class="text--xxl">Compare</h2>
         <div class="compare__row">
           <p class="compare__label text--xs">The Features</p>
@@ -220,9 +233,9 @@
           <div class="check__container"></div>
           <div class="check__container"><img src="assets/pricing/desktop/check.svg" /></div>
         </div>
-      </article>
+      </section>
 
-      <article class="beta-card">
+      <section class="beta-card">
         <picture>
           <source media="(min-width: 1280px)" srcset="assets/shared/desktop/bg-beta.jpg" />
           <source media="(min-width: 768px)" srcset="assets/shared/tablet/bg-beta.jpg" />
@@ -233,7 +246,7 @@
           <h2 class="card__title text--xxl">We're in Beta. Get your invite today!</h2>
           <a href="#" class="arrow-link--white text--xs">Get an invite</a>
         </div>
-      </article>
+      </section>
     </main>
 
     <footer class="footer">
