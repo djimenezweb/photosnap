@@ -16,7 +16,7 @@ En esta web me propuse hacer un uso intensivo de grid, pues es especialmente pot
 
 También he practicado mucho los selectores combinados. Aunque se desaconseja su uso por cuestiones de especificidad, no me he encontrado con ningún problema y me ha parecido un método especialmente flexible para aplicar pequeños estilos en concreto.
 
-Los botones del menú responsive y de cambio de precios están resueltos con JavaScript. En el script de precios hay un objeto con todos los precios posibles y una función que aplica el texto adecuado según el estado del botón.
+Los botones del menú responsive y de cambio de precios están resueltos con JavaScript. Para el script de precios hay un array de objetos con todos los precios posibles y una función que aplica el texto adecuado según el estado del botón.
 
 Ha sido un trabajo del que estoy especialmente orgulloso por la rapidez que me llevó hacer la mayoría de las páginas. Sin embargo, la tabla de precios llevó más trabajo del que tenía pensado.
 
